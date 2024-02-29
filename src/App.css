@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,43 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+#root{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  width: 150px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+}
+.header-big {
+  font-size: 16px;
+  color: rgb(8, 145, 191);
+  padding: 0px 10px  0 10px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.column {
+    display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+      align-items: center;
 }
