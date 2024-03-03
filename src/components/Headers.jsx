@@ -1,24 +1,33 @@
 //import React from 'react';
-import Header from "./Header";
-import Time from "./Time";
-import News from "./News";
+import Header from "./header/Header";
+import Time from "./header/Time";
+import News from "./header/News";
+import RightSide from "./header/RightSide";
+import Rates from "./header/Rates";
 
-export default function Headers(){
-    return (
-        <>
-        <div className="column">
-            <div className="row">
-        <Header size="header-big" title="Сейчас в СМИ" />
-        <Header size="header-big" title="в Германии"/> 
-        <Header size="header-big" title="Рекомендуем"/>
-        <Time />
+export default function Headers() {
+  return (
+    <>
+      <div className="column">
+        <div className="row">
+          <Header size="header-big" title="Сейчас в СМИ" />
+          <Header size="header-big" title="в Германии" />
+          <Header size="header-big" title="Рекомендуем" />
+          <Time />
         </div>
-        </div>
-        <div className="column">
+
+        <div className="row">
+          <div className="column">
+            <News />
             <div className="row">
-                <News />
+                <Rates />
             </div>
+          </div>
+          <div className="column">
+            <RightSide />
+          </div>
         </div>
+      </div>
     </>
-    )
+  );
 }

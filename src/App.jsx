@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import './App.css'
-import Logo from './components/Logo'
+import Main from './components/Main'
 import Headers from './components/Headers'
 function App() {
   //const [count, setCount] = useState(0)
@@ -10,7 +10,9 @@ function App() {
     <header className="header">
       <Headers />
     </header>
-    <Logo />
+    <main className="main">
+      <Main />
+    </main>
    </>
   )
 }

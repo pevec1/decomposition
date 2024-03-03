@@ -1,5 +1,5 @@
 import "./../App.css"
-import logo from './../Yandex_logo_2021_Russian.svg.png'
+import logo from './../img/Yandex_logo_2021_Russian.svg.png'
 export default function Logo() {
     return (
         <div>

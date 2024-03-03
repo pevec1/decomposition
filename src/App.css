@@ -42,28 +42,31 @@
 } */
 
 
-#root{
+body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
 }
 
 .logo{
   width: 150px;
+  margin-top: -10px;
 }
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 70%;
+  max-width: 70vw;
+  margin-left: 200px;
+  width: max-content;
 }
+
 .header-big {
-  font-size: 16px;
+  font-size: 20px;
   color: rgb(8, 145, 191);
   padding: 0px 10px  0 10px;
 }
@@ -77,5 +80,118 @@
     display: flex;
       flex-direction: column;
       justify-content:space-around;
-      align-items: center;
+      align-items: flex-start;
+}
+
+.new{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: first baseline;
+  width: 100%;
+  padding: 0px 5px 3px 5px;
+}
+.logoNews{
+  width: 16px;
+  height: 16px;
+  padding: 0px 5px 0 5px;
+}
+
+.right-side {
+  padding: 0px 5px 3px 5px;
+}
+h3{
+   margin:0;
+  padding: 0;
+ 
+}
+.workerror{
+    color: rgb(8, 145, 191);
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.rates{
+  margin-left: 50px;
+}
+.rate{
+  display: inline;
+   padding: 0px 5px 3px 5px;
+}
+.rate-title{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.rate-num{
+  color:gray;
+}
+
+.main{
+    display: inline-block;
+}
+.title{
+  margin-left: 200px;
+    align-items: first baseline;
+}
+
+.main-small{
+  font-size: 18px;
+      color: rgb(8, 145, 191);
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 6px;
+  margin-left: 40px;
+  width: min-content;
+}
+
+.search-input {
+  display: flex;
+  width: 40rem;
+  padding: 5px;
+  border: 2px solid #ffcc01;
+  margin-left: 10px;
+}
+
+ .label {
+  margin-left: 5px;
+    padding: 0px 5px 3px 5px;
+   }
+.label-example {
+  color: gray;
+}
+   .search-button {
+  padding: 8px 20px 5px 15px;
+  background-color: #ffcc01;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(90% 0, 100% 50%, 100% 50%, 90% 100%, 0 100%, 0 50%, 0 0);
+}
+
+.banner{
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.main-big {
+  font-size: 20px;
+  color: rgb(8, 145, 191);
+  margin-right: 20px;
+}
+.picture{
+  padding: 6px;
+}
+.bold {
+  font-weight: bolder;
+}
+@media (max-width: 640px) {
+  .header {
+    /* max-width: 90vw; */
+    margin-left: 100px;
+    width: 100%;
+  }
 }
